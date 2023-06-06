@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package user.v1;
+
+import "google/api/annotations.proto";
+import "google/protobuf/empty.proto";
+
+option go_package = "backend/api/user/v1;v1";
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc UserInformation (google.protobuf.Empty) returns (UserInformationResponse) {
+    option (google.api.http) = {
+      get: "/me"
+    };
+  }
+}
+
+// The response message containing the greetings
+message UserInformationResponse {
+  string name = 1;
+}
