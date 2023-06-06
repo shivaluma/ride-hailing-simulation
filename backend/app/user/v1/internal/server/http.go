@@ -2,9 +2,8 @@ package server
 
 import (
 	v1 "backend/api/user/v1"
-	"backend/app/user/internal/conf"
-	"backend/app/user/internal/service"
-
+	"backend/app/user/v1/internal/conf"
+	"backend/app/user/v1/internal/service"
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"
 	"github.com/go-kratos/kratos/v2/transport/http"

@@ -6,12 +6,11 @@
 package main
 
 import (
-	"backend/app/user/internal/biz"
-	"backend/app/user/internal/conf"
-	"backend/app/user/internal/data"
-	"backend/app/user/internal/server"
-	"backend/app/user/internal/service"
-
+	"backend/app/user/v1/internal/biz"
+	"backend/app/user/v1/internal/conf"
+	"backend/app/user/v1/internal/data"
+	"backend/app/user/v1/internal/server"
+	"backend/app/user/v1/internal/service"
 	"github.com/go-kratos/kratos/v2"
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/google/wire"

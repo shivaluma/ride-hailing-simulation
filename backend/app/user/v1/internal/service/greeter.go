@@ -4,7 +4,7 @@ import (
 	"context"
 
 	v1 "backend/api/user/v1"
-	"backend/app/user/internal/biz"
+	"backend/app/user/v1/internal/biz"
 )
 
 // GreeterService is a greeter service.
